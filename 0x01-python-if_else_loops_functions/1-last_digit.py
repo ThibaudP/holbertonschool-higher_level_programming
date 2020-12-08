@@ -12,5 +12,5 @@ if rem > 5:
     print("greater than 5")
 elif rem == 0:
     print("0")
-else:
+elif rem < 6 and rem != 0:
     print("greater than 6 and not 0")
