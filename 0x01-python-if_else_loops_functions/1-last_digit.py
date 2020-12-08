@@ -6,7 +6,7 @@ if number < 0:
 else:
     rem = number % 10
 
-print("Last digit of {:d} is {:d} ".format(number, rem), end='')
+print("Last digit of", number, "is", rem, end=' ')
 
 if rem > 5:
     print("and is greater than 5")
