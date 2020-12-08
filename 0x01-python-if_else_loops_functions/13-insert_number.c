@@ -19,7 +19,13 @@ listint_t *insert_node(listint_t **head, int number)
 		return (NULL);
 
 	if (*head == NULL)
+	{
+		new->n = number;
+		new->next = NULL;
 		*head = new;
+		return (new);
+	}
+
 	
 	if (number < cur->n)
 	{
