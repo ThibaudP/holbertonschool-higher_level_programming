@@ -2,15 +2,15 @@
 import random
 number = random.randint(-10000, 10000)
 if number < 0:
-    absnum = -number
+    rem = (-number) % 10
 else:
-    absnum = number
+    rem = number % 10
 
-print("Last digit of {:d} is {:d}".format(number, absnum % 10), end=' ')
+print("Last digit of {:d} is {:d} ".format(number, rem), end='')
 
-if absnum % 10 > 5:
+if rem > 5:
     print("and is greater than 5")
-elif absnum % 10 == 0:
+elif rem == 0:
     print("and is 0")
-elif absnum % 10 != 0 and absnum % 10 < 6:
+else::
     print("and is less than 6 and not 0")
