@@ -15,4 +15,4 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * What is a sequence
 * What is tuple packing
 * What is sequence unpacking
-* What is the del statement and how to use it
+* What is the `del` statement and how to use it
