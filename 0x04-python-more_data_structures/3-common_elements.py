@@ -7,4 +7,4 @@ def common_elements(set_1, set_2):
     elif set_2 and not set_1:
         return set_2
     else:
-        return None
+        return set()
