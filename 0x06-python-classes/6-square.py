@@ -105,16 +105,17 @@ class Square:
         """
         #: if size is zero, print an empty line
         if self.size is 0:
-            print()
-        #: offset vertical start point by position[1]
-        for i in range(self.position[1]):
             print('')
+        else:
+            #: offset vertical start point by position[1]
+            for i in range(self.position[1]):
+                print('')
 
-        #: print square taking horizontal offset into account
-        for x in range(self.size):
-            #: offset lines by position[0]
-            for j in range(self.position[0]):
-                print(' ', end='')
-            for y in range(self.size):
-                print('#', end='')
-            print('')
+            #: print square taking horizontal offset into account
+            for x in range(self.size):
+                #: offset lines by position[0]
+                for j in range(self.position[0]):
+                    print(' ', end='')
+                for y in range(self.size):
+                    print('#', end='')
+                print('')
