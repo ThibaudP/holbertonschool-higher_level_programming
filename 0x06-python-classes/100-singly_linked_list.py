@@ -1,4 +1,14 @@
 #!/usr/bin/python3
+"""SinglyLinkedList module.
+
+This module contains a recreation of singly linked lists from C, but in Python.
+Why bother recreating such an abomination in a language that doesn't need it?
+Don't know, but that's what this is, and that's what you get.
+No returns or refunds.
+
+"""
+
+
 class Node:
     """This class is a linked list node
 
