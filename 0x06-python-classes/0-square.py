@@ -6,6 +6,7 @@ as well as methods to draw it with and without XY position offset.
 
 """
 
+
 class Square:
     """This class contains a square"""
     pass
