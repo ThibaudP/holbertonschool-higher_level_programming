@@ -1,4 +1,13 @@
 #!/usr/bin/python3
+"""MagicClass module.
+
+This module contains a magic class that uses the real magic... of maths.
+The class defines a circle by its radius, and computes the area and perimeter.
+Yes, that's it. Underwhelming, right?
+
+"""
+
+
 import math
 
 
