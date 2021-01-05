@@ -9,6 +9,7 @@ class Square:
     """
     def __init__(self, size=0, position=(0, 0)):
         """__init__ method
+
         Args:
             size (int): size of the square
             position (tuple): position of top left corner
