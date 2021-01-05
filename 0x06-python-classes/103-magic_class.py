@@ -11,7 +11,7 @@ class MagicClass:
     """
 
     def __init__(self, radius=0):
-        """Initializes the instance, setting its radius
+        """Initializes the instance and sets its radius
 
         Args:
             radius (int): data stored in node
