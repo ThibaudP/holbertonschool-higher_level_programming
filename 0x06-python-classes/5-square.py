@@ -1,0 +1,69 @@
+#!/usr/bin/python3
+class Square:
+    """This class contains a square
+
+    Attributes:
+        __size (int): size of the square
+
+    """
+    def __init__(self, size=0):
+        """__init__ method
+        Args:
+            size (int): size of the square
+
+        """
+        self.size = size
+
+    @property
+    def size(self):
+        """size getter
+
+        Gets the value of private attribute __size
+
+        Return:
+            int: the size of the square
+
+        """
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        """size setter
+
+        Sets the value of private attribute __size
+
+        Args:
+            value (int): value of the square
+        Raises:
+            TypeError: If ``value`` is not an int
+            ValueError: If ``value`` is negative
+
+        """
+        if type(value) is not int:
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = value
+
+    def area(self):
+        """area method
+
+        Returns:
+            int: the area of the square
+
+        """
+        return (self.__size ** 2)
+
+    def my_print(self):
+        """my_print method
+
+        Prints the square
+
+        """
+        if self.size is 0:
+            print('')
+        for x in range(self.size):
+            for y in range(self.size):
+                print('#', end='')
+            print('')
