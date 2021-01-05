@@ -105,7 +105,7 @@ class Square:
         """
         #: if size is zero, print an empty line
         if self.size is 0:
-            print('')
+            print()
         #: offset vertical start point by position[1]
         for i in range(self.position[1]):
             print('')
@@ -114,7 +114,7 @@ class Square:
         for x in range(self.size):
             #: offset lines by position[0]
             for j in range(self.position[0]):
-                print('_', end='')
+                print(' ', end='')
             for y in range(self.size):
                 print('#', end='')
             print('')
