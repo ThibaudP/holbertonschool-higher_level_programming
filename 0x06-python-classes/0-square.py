@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+"""Square module.
+
+This module contains a class that defines a square, its size,
+as well as methods to draw it with and without XY position offset.
+
+"""
+
 class Square:
-    """This class contains a square
-    
-    The square shall be of number 1, as 1 shall be the number of squares
-    
-    """
+    """This class contains a square"""
     pass
