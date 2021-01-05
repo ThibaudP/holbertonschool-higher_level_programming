@@ -14,7 +14,7 @@ class MagicClass:
         """Initializes the instance and sets its radius
 
         Args:
-            radius (int): data stored in node
+            radius (int): radius of the circle
 
         """
         self.__radius = 0
