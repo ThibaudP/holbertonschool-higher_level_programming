@@ -1,0 +1,60 @@
+``4-print_square`` tests
+======================
+
+Importing module:
+>>> print_square = __import__('4-print_square').print_square
+
+Tests:
+
+Size is an int
+>>> print_square(4)
+####
+####
+####
+####
+
+Size is 0
+>>> print_square(0)
+
+
+Size is None
+>>> print_square(None)
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+Size is a float
+>>> print_square("")
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+Size is a string
+>>> print_square("toto")
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+Size is a list
+>>> print_square([4])
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+Size is less than 0
+>>> print_square(-1)
+Traceback (most recent call last):
+    ...
+ValueError: size must be >= 0
+
+Size is less than 0 and is a float
+>>> print_square(-4.0)
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+Size is infinite
+>>> print_square(float("inf"))
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer

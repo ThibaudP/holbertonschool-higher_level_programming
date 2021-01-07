@@ -1,0 +1,49 @@
+``3-say_my_name`` tests
+======================
+
+Importing module:
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Tests:
+
+first_name is empty
+>>> say_my_name("", "White")
+My name is  White
+
+last_name is empty
+>>> say_my_name("Walter", "")
+My name is Walter 
+
+first_name is None
+>>> say_my_name(None, "White")
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
+
+last_name is None
+>>> say_my_name("Walter", None)
+Traceback (most recent call last):
+    ...
+TypeError: last_name must be a string
+
+first_name is not a string
+>>> say_my_name(123, "White")
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
+
+last_name is not a string
+>>> say_my_name("Walter", 123)
+Traceback (most recent call last):
+    ...
+TypeError: last_name must be a string
+
+first_name and last_name are not a string
+>>> say_my_name(123, 456)
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
+
+Only one argument
+>>> say_my_name("Walter")
+My name is Walter 
