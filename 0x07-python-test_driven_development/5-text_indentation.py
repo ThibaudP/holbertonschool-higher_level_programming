@@ -16,7 +16,7 @@ def text_indentation(text):
             nl = 1
         elif x == " " and nl == 1:
             print("", end='')
-        else:                
+        else:
             print(x, end='')
             if x == "\n":
                 nl = 1
