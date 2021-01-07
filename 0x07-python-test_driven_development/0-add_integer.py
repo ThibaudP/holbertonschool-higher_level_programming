@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-"""Add Integer module"""
+"""add_integer module"""
+
+
 def add_integer(a, b=98):
-    """Adds 2 integers (or floats) together and returns the result
+    """Takes 2 ints or floats, casts them to ints,
+    adds them together and returns the result
     """
+
     if type(a) in [float, int]:
         try:
             a = int(a)

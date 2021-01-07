@@ -25,6 +25,10 @@ Default arg works
 >>> add_integer(0)
 98
 
+Both are 0
+>>> add_integer(0, 0)
+0
+
 Pass ``a`` as float
 >>> add_integer(1.0, 2)
 3
@@ -41,6 +45,18 @@ TypeError: a must be an integer
 
 Pass infinity as b
 >>> add_integer(1, float("inf"))
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+Pass -infinity as a
+>>> add_integer(float("-inf"), 1)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+Pass -infinity as b
+>>> add_integer(1, float("-inf"))
 Traceback (most recent call last):
     ...
 TypeError: b must be an integer

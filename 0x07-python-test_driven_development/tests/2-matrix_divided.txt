@@ -1,0 +1,81 @@
+``2-matrix_divided`` tests
+======================
+
+Importing module:
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Tests:
+
+Div is int
+
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+Div is float
+
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3.0)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+Div is something else
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], "toto")
+Traceback (most recent call last):
+    ...
+TypeError: div must be a number
+
+Matrix contains something that's not an int
+
+>>> matrix_divided([[1, 2, "toto"], [4, 5, 6]], 3)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+``div`` is 0
+
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 0)
+Traceback (most recent call last):
+    ...
+ZeroDivisionError: division by zero
+
+``div`` is None
+
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], None)
+Traceback (most recent call last):
+    ...
+TypeError: div must be a number
+
+Matrix has differing row sizes
+
+>>> matrix_divided([[1, 2, 3], [4, 5,]], 3)
+Traceback (most recent call last):
+    ...
+TypeError: Each row of the matrix must have the same size
+
+Matrix is None
+>>> matrix_divided(None, 3)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+A row has None element
+>>> matrix_divided([[1, 2, 3], [4, 5, None]], 3)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Matrix has None as row
+>>> matrix_divided([[1, 2, 3], None], 3)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Matrix is not empty
+>>> matrix_divided([], 3)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+A row has infinity
+>>> matrix_divided([[1, 2, 3], [4, 5, float("inf")]], 3)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
