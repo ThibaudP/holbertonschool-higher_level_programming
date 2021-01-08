@@ -19,6 +19,12 @@ class TestMaxInteger(unittest.TestCase):
         """
         self.assertTrue(max_integer() == None)
 
+    def test_none(self):
+        """
+        None as arg
+        """
+        self.assertTrue(max_integer(None) == None)
+
     def test_list_none(self):
         """
         list is None
