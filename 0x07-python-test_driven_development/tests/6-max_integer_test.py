@@ -66,3 +66,10 @@ class TestMaxInteger(unittest.TestCase):
         """
         list = [1, 2, 3, float("inf")]
         self.assertTrue(max_integer(list) == float("inf"))
+    
+    def test_first_highest(self):
+        """
+        first member is highest
+        """
+        list = [4, 1, 2, 3]
+        self.assertTrue(max_integer(list) == 4)
