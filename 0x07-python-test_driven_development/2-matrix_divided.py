@@ -10,13 +10,13 @@ def matrix_divided(matrix, div):
 
     # Check if matrix doesn't exist or isn't a list
     if not matrix or type(matrix) is not list:
-        raise TypeError(mtrx_typerr)
+        raise TypeError(mtrx_typeerr)
 
     # For each element in matrix, check if element is not a list
     stored = 0
     for x in matrix:
         if type(x) is not list:
-            raise TypeError(mtrx_typerr)
+            raise TypeError(mtrx_typeerr)
 
         # Check if all rows are the same size
         if stored == 0:
@@ -27,7 +27,7 @@ def matrix_divided(matrix, div):
         # Check if all values in a row are float or int
         for y in x:
             if type(y) not in [float, int]:
-                raise TypeError(mtrx_typerr)
+                raise TypeError(mtrx_typeerr)
 
     # Check if div is not a float or an int, or if div is None
     if type(div) not in [float, int] or div is None:

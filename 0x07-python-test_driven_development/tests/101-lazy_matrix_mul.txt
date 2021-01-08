@@ -41,31 +41,31 @@ Checking for passing non-list as m_a:
 >>> lazy_matrix_mul(None, [[1, 2], [3, 4]])
 Traceback (most recent call last):
 ...
-TypeError: Object arrays are not currently supported
+TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
 
 Checking for passing non-list to m_b:
 >>> lazy_matrix_mul([[1, 2], [3, 4]], None)
 Traceback (most recent call last):
 ...
-TypeError: Object arrays are not currently supported
+TypeError: unsupported operand type(s) for *: 'int' and 'NoneType'
 
 Checking for passing empty m_a:
 >>> lazy_matrix_mul([], [[1, 2], [3, 4]])
 Traceback (most recent call last):
 ...
-ValueError: shapes (0,) and (2,2) not aligned: 0 (dim 0) != 2 (dim 0)
+ValueError: objects are not aligned
 
 Checking for passing m_a with empty rows:
 >>> lazy_matrix_mul([[], []], [[1, 2], [3, 4]])
 Traceback (most recent call last):
 ...
-ValueError: shapes (2,0) and (2,2) not aligned: 0 (dim 1) != 2 (dim 0)
+ValueError: objects are not aligned
 
 Checking for passing empty m_b:
 >>> lazy_matrix_mul([[1, 2], [3, 4]], [])
 Traceback (most recent call last):
 ...
-ValueError: shapes (2,2) and (0,) not aligned: 2 (dim 1) != 0 (dim 0)
+ValueError: objects are not aligned
 
 Checking for passing m_b with empty rows:
 >>> print(lazy_matrix_mul([[1, 2], [3, 4]], [[], []]))
@@ -87,16 +87,16 @@ Checking for non-number in list in m_a:
 >>> lazy_matrix_mul([[1, "Hello"], [3, 4]], [[1, 2], [3, 4]])
 Traceback (most recent call last):
 ...
-TypeError: invalid data type for einsum
+ValueError: data type must provide an itemsize
 
 Checking for non-number in list in m_b:
 >>> lazy_matrix_mul([[1, 2], [3, 4]], [[1, "Hello"], [3, 4]])
 Traceback (most recent call last):
 ...
-TypeError: invalid data type for einsum
+ValueError: data type must provide an itemsize
 
 Checking for mismatching matrices:
 >>> lazy_matrix_mul([[1, 2, 3], [4, 5, 6]], [[1, 2], [3, 4,]])
 Traceback (most recent call last):
 ...
-ValueError: shapes (2,3) and (2,2) not aligned: 3 (dim 1) != 2 (dim 0)
+ValueError: objects are not aligned
