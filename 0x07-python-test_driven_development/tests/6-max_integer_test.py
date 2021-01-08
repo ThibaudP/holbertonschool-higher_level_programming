@@ -19,12 +19,6 @@ class TestMaxInteger(unittest.TestCase):
         """
         self.assertEqual(max_integer(), None)
 
-    def test_list_none(self):
-        """
-        list is None
-        """
-        self.assertRaises(TypeError, max_integer, None)
-
     def test_equal_members(self):
         """
         All members of list are equal
