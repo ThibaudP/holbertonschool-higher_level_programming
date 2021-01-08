@@ -77,3 +77,7 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 A row has infinity
 >>> matrix_divided([[1, 2, 3], [4, 5, float("inf")]], 3)
 [[0.33, 0.67, 1.0], [1.33, 1.67, inf]]
+
+Matrix divided by infinity
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], float("inf"))
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]

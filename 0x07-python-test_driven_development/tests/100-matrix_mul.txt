@@ -100,3 +100,15 @@ Checking for mismatching matrices:
 Traceback (most recent call last):
 ...
 ValueError: m_a and m_b can't be multiplied
+
+m_a list of ints, m_b list of lists of number
+>>> matrix_mul([1, 2, 3, 4, 5, 6], [[1, 2], [3, 4]])
+Traceback (most recent call last):
+...
+TypeError: m_a must be a list of lists
+
+m_b list of ints, m_a list of lists of number
+>>> matrix_mul([[1, 2, 3], [4, 5, 6]], [1, 2, 3, 4])
+Traceback (most recent call last):
+...
+TypeError: m_b must be a list of lists
