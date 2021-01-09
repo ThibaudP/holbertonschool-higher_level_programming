@@ -81,3 +81,15 @@ A row has infinity
 Matrix divided by infinity
 >>> matrix_divided([[1, 2, 3], [4, 5, 6]], float("inf"))
 [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+Checking for no args:
+>>> matrix_divided()
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+Checking for 1 args:
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]])
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
