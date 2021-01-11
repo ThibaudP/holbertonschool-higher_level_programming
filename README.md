@@ -14,3 +14,4 @@ Each subfolder of this repo contains one singular project comprised of multiple 
 * **[0x05-python-exceptions](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x05-python-exceptions)**: Python - Exceptions
 * **[0x06-python-classes](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x06-python-classes)**: Python - Classes & Objects
 * **[0x07-python-test_driven_development](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x07-test_driven_development)**: Python - Test Driven Development (TDD)
+* **[0x08-python-more_classes](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x08-python-more_classes)**: Python - More classes & objects
