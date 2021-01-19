@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-"""my_list
+"""my_list module"""
 
-    MyList object"""
 
 class MyList(list):
-    """MyList class, extends the built-in list class
-
-    """
+    """MyList class, extends the built-in `list` class"""
 
     def print_sorted(self):
         """Prints the sorted list"""

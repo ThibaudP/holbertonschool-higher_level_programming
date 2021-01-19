@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""lookup
+"""lookup module"""
 
-    Fetches all attributes & methods from an object"""
 
 def lookup(obj):
     """Fetches all attributes & methods from an object"""

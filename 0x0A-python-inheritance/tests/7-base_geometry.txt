@@ -1,0 +1,74 @@
+The ``7-base_geometry`` module
+======================
+
+Importing module:
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+Tests:
+Check if type is correct
+>>> figure = BaseGeometry()
+>>> type(figure)
+<class '7-base_geometry.BaseGeometry'>
+
+Call area method
+>>> figure.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+>>> figure.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> figure.integer_validator("betty", 0)
+Traceback (most recent call last):
+...
+ValueError: betty must be greater than 0
+
+>>> figure.integer_validator("betty", -98)
+Traceback (most recent call last):
+...
+ValueError: betty must be greater than 0
+
+>>> figure.integer_validator("betty", 98)
+
+>>> figure.integer_validator("betty", (98))
+
+>>> figure.integer_validator("", 98)
+
+>>> figure.integer_validator("betty", "holberton")
+Traceback (most recent call last):
+...
+TypeError: betty must be an integer
+
+>>> figure.integer_validator("betty", True)
+Traceback (most recent call last):
+...
+TypeError: betty must be an integer
+
+>>> figure.integer_validator("betty", 2.5)
+Traceback (most recent call last):
+...
+TypeError: betty must be an integer
+
+>>> figure.integer_validator("betty", None)
+Traceback (most recent call last):
+...
+TypeError: betty must be an integer
+
+>>> figure.integer_validator("betty", {1, 2})
+Traceback (most recent call last):
+...
+TypeError: betty must be an integer
+
+>>> figure.integer_validator("betty", (1, 2))
+Traceback (most recent call last):
+...
+TypeError: betty must be an integer
+
+>>> figure.integer_validator("betty", [1, 2])
+Traceback (most recent call last):
+...
+TypeError: betty must be an integer
