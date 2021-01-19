@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_python_bytes - gives data of the PyBytesObject
+ * print_python_bytes - prints python bytes
  *
  * @p: the PyObject
  */
@@ -35,7 +35,7 @@ void print_python_bytes(PyObject *p)
 }
 
 /**
- * print_python_list - gives data of the PyListObject
+ * print_python_list - prints python list
  *
  * @p: the PyObject
  */
