@@ -11,6 +11,8 @@ Tests:
 >>> my_list.append(98)
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5, 98]
+>>> print(my_list)
+[1, 2, 4, 3, 5, 98]
 
 >>> my_list = MyList([1, 2, 3, 4, 5])
 >>> my_list.print_sorted()
