@@ -7,6 +7,4 @@ class MyList(list):
 
     def print_sorted(self):
         """Prints the sorted list"""
-        sortedlist = self.copy()
-        sortedlist.sort()
-        print(sortedlist)
+        print(sorted(self))
