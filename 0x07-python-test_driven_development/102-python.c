@@ -14,11 +14,10 @@ void print_python_string(PyObject *p)
 	printf("[.] string object info\n");
 	if PyUnicode_CheckExact(p)
 	{
-		printf("  type: ");
 		if (PyUnicode_IS_COMPACT_ASCII(p))
-			printf("compact ascii\n");
+			printf("  type: compact ascii\n");
 		else
-			printf("compact unicode object\n");
+			printf("  type: compact unicode object\n");
 		printf("  length: %zd\n", PyUnicode_GetLength(p));
 		printf("  value: %ls\n", PyUnicode_AsWideCharString(p, NULL));
 	}
