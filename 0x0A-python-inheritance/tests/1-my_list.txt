@@ -25,7 +25,7 @@ Tests:
 >>> my_list.print_sorted()
 []
 
->>>my_list = MyList([1])
+>>> my_list = MyList([1])
 >>> my_list.print_sorted()
 [1]
 
