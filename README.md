@@ -17,5 +17,4 @@ Each subfolder of this repo contains one singular project comprised of multiple 
 * **[0x08-python-more_classes](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x08-python-more_classes)**: Python - More classes & objects
 * **[0x09-python-everything_is_object](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x09-python-everything_is_object)**: Python - Everything is object
 * **[0x0A-python-inheritance](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x0A-python-inheritance)**: Python - Inheritance
-
-0x0A-python-inheritance
+* **[0x0B-python-input_output](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x0B-python-input_output)**: Python - Input / Output
