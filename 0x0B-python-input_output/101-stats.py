@@ -7,7 +7,7 @@ def print_stats(file_size, status_codes):
     """prints the stats"""
     print("File size: {:d}".format(file_size))
     for k, v in sorted(status_codes.items()):
-        if v != 0:
+        if v:
             print("{:s}: {:d}".format(k, v))
 
 file_size = 0
@@ -17,8 +17,8 @@ cnt = 0
 
 try:
     for line in sys.stdin:
-        words = line.split(' ')
-        if len(words) == 9:
+        words = line.split()
+        if len(words) >= 2:
             chk = cnt
             if words[-2] in status_codes:
                 status_codes[words[-2]] += 1
@@ -34,7 +34,6 @@ try:
             print_stats(file_size, status_codes)
 
     print_stats(file_size, status_codes)
-
 
 except KeyboardInterrupt:
     print_stats(file_size, status_codes)
