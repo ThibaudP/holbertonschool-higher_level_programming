@@ -19,7 +19,6 @@ try:
                 if v != 0:
                     print("{:s}: {:d}".format(k, v))
 
-    print_stats(file_size, status_codes)
     print("File size: {:d}".format(file_size))
     for k, v in sorted(status_codes.items()):
         if v != 0:
