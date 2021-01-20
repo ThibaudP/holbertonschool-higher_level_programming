@@ -17,13 +17,12 @@ cnt = 0
 
 try:
     for line in sys.stdin:
-        if cnt > 0 and cnt % 10 == 0:
-            print_stats(file_size, status_codes)
-
         words = line.split()
         file_size += int(words[8])
         status_codes[words[7]] += 1
         cnt += 1
+        if cnt > 0 and cnt % 10 == 0:
+            print_stats(file_size, status_codes)
 
     print_stats(file_size, status_codes)
 
