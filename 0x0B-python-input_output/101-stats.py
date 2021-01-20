@@ -22,7 +22,6 @@ status_codes = {'200': 0, '301': 0, '400': 0, '401': 0,
 cnt = 0
 
 for line in sys.stdin:
-    print(cnt)
     if cnt > 0 and cnt % 10 == 0:
         print_stats(file_size, status_codes)
 
