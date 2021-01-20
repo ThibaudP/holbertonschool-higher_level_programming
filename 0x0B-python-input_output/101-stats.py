@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """101-stats module"""
 import sys
-import signal
 
 
 def print_stats(file_size, status_codes):
@@ -10,11 +9,6 @@ def print_stats(file_size, status_codes):
     for k, v in sorted(status_codes.items()):
         if v != 0:
             print("{:s}: {:d}".format(k, v))
-
-
-def sigint_handler(sig, frame):
-    """calls print_stats when SIGINT is captured"""
-    print_stats(file_size, status_codes)
 
 file_size = 0
 status_codes = {'200': 0, '301': 0, '400': 0, '401': 0,
