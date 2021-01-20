@@ -27,24 +27,12 @@ try:
             print_stats(file_size, status_codes)
 
         words = line.split()
-
-        if len(words) >= 2:
-            verif = cnt
-            if words[7] in status_codes:
-                status_codes[words[7]] += 1
-                cnt += 1
-            try:
-                file_size += int(words[8])
-                if verif == cnt:
-                    cnt += 1
-            except:
-                if verif == cnt:
-                    continue
+        file_size += int(words[8])
+        status_codes[words[7]] += 1
+        cnt += 1
 
     print_stats(file_size, status_codes)
 
-    # file_size += int(words[8])
-    # status_codes[words[7]] += 1
-    # cnt += 1
+
 except KeyboardInterrupt:
     print_stats(file_size, status_codes)
