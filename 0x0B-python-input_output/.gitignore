@@ -1,8 +1,10 @@
 *main*
 a.out
 __pycache__
-[!0-9]*.py
 *.pyc
 *.txt
 *.json
 8-my_class*.py
+101-generator.py
+read_write_heap.c
+read_write_heap.py
