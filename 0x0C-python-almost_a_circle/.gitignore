@@ -1,0 +1,6 @@
+*main*
+a.out
+__pycache__
+*.pyc
+*.txt
+*.json
