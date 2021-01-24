@@ -83,3 +83,29 @@ class Rectangle(Base):
         for x in range(self.height):
             print(" " * self.x, end='')
             print("#" * self.width)
+
+    def update(self, *args, **kwargs):
+        """updates the value of a given instance"""
+        labels = ["id", "width", "height", "x", "y"]
+        if args:
+            for i in range(len(args)):
+                if i > 4:
+                    raise TypeError("Rectangle.update() takes 5 arguments\
+                                    or less")
+                if labels[i] is "id" and args[i] is not None:
+                    self.id = args[i]
+                else:
+                    self.integer_validator(labels[i], args[i])
+                    setattr(self, labels[i], args[i])
+        else:
+            for k, v in kwargs.items():
+                if k is "id" and v is not None:
+                    self.id = v
+                elif k in labels:
+                    self.integer_validator(k, v)
+                    setattr(self, k, v)
+
+    def to_dictionary(self):
+        """returns the dictionary representation of a Rectangle object"""
+        return {"id": self.id, "x": self.x, "y": self.y,
+                "width": self.width, "height": self.height}
