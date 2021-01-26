@@ -49,7 +49,7 @@ class Base():
             raise TypeError("dictionary must be a dict")
         if len(dictionary) == 0:
             raise ValueError("dictionary must not be empty")
-        
+
         if cls.__name__ == "Rectangle":
             new_obj = cls(1, 1)
         else:
