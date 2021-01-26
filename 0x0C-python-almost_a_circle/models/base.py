@@ -134,7 +134,7 @@ class Base():
                                 "y": int(args[4])}
                     elif cls.__name__ is "Square":
                         dict = {"id": int(args[0]),
-                                "side": int(args[1]),
+                                "size": int(args[1]),
                                 "x": int(args[2]),
                                 "y": int(args[3])}
                     obj_list.append(cls.create(**dict))
