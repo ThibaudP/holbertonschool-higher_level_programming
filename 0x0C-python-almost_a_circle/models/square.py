@@ -26,9 +26,9 @@ class Square(Rectangle):
     def size(self, value):
         """size setter"""
         self.integer_validator("width", value)
-        self.__size = value
         self.width = value
         self.height = value
+        self.__size = value
 
     def update(self, *args, **kwargs):
         """update method for square class"""
