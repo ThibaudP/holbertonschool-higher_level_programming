@@ -21,7 +21,7 @@ class Base():
     def to_json_string(list_dictionaries):
         """turns dict to json string"""
 
-        if type(list_dictionaries) is not list:
+        if type(list_dictionaries) is not list and list_dictionaries is not None:
             raise TypeError("list_dictionaries is not a list")
         for x in list_dictionaries:
             if type(x) is not dict:

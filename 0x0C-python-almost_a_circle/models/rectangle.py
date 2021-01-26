@@ -95,14 +95,12 @@ class Rectangle(Base):
                 if labels[i] is "id" and args[i] is not None:
                     self.id = args[i]
                 else:
-                    self.integer_validator(labels[i], args[i])
                     setattr(self, labels[i], args[i])
         else:
             for k, v in kwargs.items():
                 if k is "id" and v is not None:
                     self.id = v
                 elif k in labels:
-                    self.integer_validator(k, v)
                     setattr(self, k, v)
 
     def to_dictionary(self):
