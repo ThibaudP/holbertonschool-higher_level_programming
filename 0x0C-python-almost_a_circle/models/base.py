@@ -63,7 +63,7 @@ class Base():
 
         list_dicts = []
 
-        if list_objs is not None or len(list_objs) > 0:
+        if list_objs is not None and len(list_objs) > 0:
             for x in list_objs:
                 if not isinstance(x, Base):
                     raise TypeError("list_objs must be a list of instances\
@@ -71,7 +71,7 @@ class Base():
                 dict = x.to_dictionary()
                 list_dicts.append(dict)
 
-        with open("{:s}.json".format(cls.__name__), "a") as file:
+        with open("{:s}.json".format(cls.__name__), "w") as file:
             file.write(Base.to_json_string(list_dicts)+"\n")
 
     @classmethod
