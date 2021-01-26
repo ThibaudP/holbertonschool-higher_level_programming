@@ -75,7 +75,7 @@ class Base():
                 list_dicts.append(dict)
 
         with open("{:s}.json".format(cls.__name__), "w") as file:
-            file.write(Base.to_json_string(list_dicts)+"\n")
+            file.write(Base.to_json_string(list_dicts))
 
     @classmethod
     def load_from_file(cls):
@@ -100,8 +100,10 @@ class Base():
 
         list_dicts = []
 
-        if list_objs is not None or len(list_objs) > 0:
-            with open("{:s}.csv".format(cls.__name__), "w") as file:
+        with open("{:s}.csv".format(cls.__name__), "w") as file:
+            if list_objs is None or len(list_objs) <= 0:
+                pass
+            else:
                 writer = csv.writer(file)
                 if cls.__name__ is "Rectangle":
                     for obj in list_objs:

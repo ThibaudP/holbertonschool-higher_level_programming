@@ -94,13 +94,13 @@ class Rectangle(Base):
                                     or less")
                 if labels[i] is "id" and args[i] is not None:
                     self.id = args[i]
-                else:
+                elif args[i] is not None:
                     setattr(self, labels[i], args[i])
         else:
             for k, v in kwargs.items():
                 if k is "id" and v is not None:
                     self.id = v
-                elif k in labels:
+                elif k in labels and v is not None:
                     setattr(self, k, v)
 
     def to_dictionary(self):
