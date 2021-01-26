@@ -101,7 +101,7 @@ class Base():
         list_dicts = []
 
         if list_objs is not None or len(list_objs) > 0:
-            with open("{:s}.csv".format(cls.__name__), "a") as file:
+            with open("{:s}.csv".format(cls.__name__), "w") as file:
                 writer = csv.writer(file)
                 if cls.__name__ is "Rectangle":
                     for obj in list_objs:
