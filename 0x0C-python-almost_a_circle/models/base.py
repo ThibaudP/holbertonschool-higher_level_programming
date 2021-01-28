@@ -3,6 +3,7 @@
 import os
 import json
 import csv
+import turtle
 
 
 class Base():
@@ -143,3 +144,36 @@ class Base():
                 return obj_list
         except IOError:
             return obj_list
+
+    def draw(list_rectangles, list_squares):
+        """Opens X11 window and draws figures"""
+
+        t = turtle.Turtle()
+        t.screen.bgcolor('#000000')
+        t.screen.title("Rectangles and Squares!")
+        t.shape('turtle')
+        t.color('#ffffff')
+        t.penup()
+        t.goto(-200, 200)
+        for rectangle in list_rectangles:
+            t.goto(t.xcor() + (rectangle.width + 20), t.ycor() - (rectangle.height + 20))
+            t.up()
+            t.down()
+            for i in range(2):
+                t.forward(rectangle.width)
+                t.left(90)
+                t.forward(rectangle.height)
+                t.left(90)
+            t.penup()
+
+        t.goto(-300, 100)
+        for square in list_squares:
+            t.goto(t.xcor() + (square.width + 20), t.ycor() - (square.height + 20))
+            t.up()
+            t.down()
+            for i in range(2):
+                t.forward(square.width)
+                t.left(90)
+                t.forward(square.height)
+                t.left(90)
+            t.penup()
