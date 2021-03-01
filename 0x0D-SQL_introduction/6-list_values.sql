@@ -1,3 +1,3 @@
- -- Lists all values from first_table
+-- Lists all values from first_table
 
 SELECT * FROM first_table;

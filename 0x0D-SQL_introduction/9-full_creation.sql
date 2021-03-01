@@ -1,4 +1,4 @@
- -- Creates a TABLE `second_table` AND populates it
+-- Creates a TABLE `second_table` AND populates it
 
 CREATE TABLE IF NOT EXISTS second_table (`id` INT, `name` VARCHAR(256), `score` INT);
 

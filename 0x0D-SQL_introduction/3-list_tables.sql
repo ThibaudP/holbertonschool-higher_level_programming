@@ -1,3 +1,3 @@
- -- Lists all tables IN the `mysql` database 
+-- Lists all tables IN the `mysql` database 
  
 SHOW TABLES;
