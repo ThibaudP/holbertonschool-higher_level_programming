@@ -20,3 +20,4 @@ Each subfolder of this repo contains one singular project comprised of multiple 
 * **[0x0B-python-input_output](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x0B-python-input_output)**: Python - Input / Output
 * **[0x0C-python-almost_a_circle](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x0C-python-almost_a_circle)**: Python - Almost a circle
 * **[0x0D-SQL_introduction](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x0D-SQL_introduction)**: SQL - Introduction
+* **[0x0E-SQL_more_queries](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x0E-SQL_more_queries)**: SQL - More Queries!
