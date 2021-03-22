@@ -1,7 +1,7 @@
 #!/usr/bin/node
 // Finds the second biggest number in an array
 
-if (process.argv.length <= 3) {
+if (process.argv.length < 4) {
   console.log('0');
 } else {
   const array = process.argv.slice(2);
