@@ -1,12 +1,10 @@
 #!/usr/bin/node
 // Finds the second biggest number in an array
 
-let second = 0;
-const array = process.argv.slice(2);
-const len = array.length;
-
-if (len > 1) {
+if (process.argv.length <= 3) {
+  console.log('0');
+} else {
+  const array = process.argv.slice(2);
   array.sort();
-  second = array[array.length - 2];
+  console.log(array[array.length - 2]);
 }
-console.log(second);
