@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""3-my_safe_filter_states"""
 import MySQLdb
 from sys import argv
 

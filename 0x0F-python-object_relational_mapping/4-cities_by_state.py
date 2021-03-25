@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""4-cities_by_states"""
 import MySQLdb
 from sys import argv
 

@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""0-select_states"""
 import MySQLdb
 from sys import argv
 
