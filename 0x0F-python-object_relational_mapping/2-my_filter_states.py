@@ -11,7 +11,7 @@ def main(mysql_user, mysql_pwd, db_name, search):
     cursor = db.cursor()
 
     sql = "SELECT * FROM states\
-           WHERE name = '{}'\
+           WHERE name LIKE BINARY '{}'\
            ORDER BY id ASC".format(search)
 
     cursor.execute(sql)
