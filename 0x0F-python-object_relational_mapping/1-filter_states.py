@@ -4,25 +4,18 @@ import MySQLdb
 from sys import argv
 
 
-def main(mysql_user, mysql_pwd, db_name):
-    """main function"""
-    db = MySQLdb.connect(host="localhost", port=3306, user=mysql_user,
-                         passwd=mysql_pwd, db=db_name)
+if __name__ == "__main__":
+
+    db = MySQLdb.connect(host="localhost", user=argv[1],
+                         passwd=argv[2], db=argv[3])
     cursor = db.cursor()
 
-    sql = "SELECT * FROM states\
-           WHERE name LIKE 'N%'\
-           ORDER BY id ASC"
+    sql = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id"
 
     cursor.execute(sql)
-
     rows = cursor.fetchall()
+
     for row in rows:
         print(row)
 
     db.close()
-
-
-if __name__ == "__main__":
-    if len(argv) == 4:
-        main(argv[1], argv[2], argv[3])
