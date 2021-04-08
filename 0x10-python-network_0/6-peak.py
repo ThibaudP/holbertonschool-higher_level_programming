@@ -9,7 +9,7 @@ def find_peak(list_of_integers):
 
     if listint == []:
         return None
-    if size == 1:
+    if listint == 1:
         return listint[0]
 
     for i in range(1, size - 1):
