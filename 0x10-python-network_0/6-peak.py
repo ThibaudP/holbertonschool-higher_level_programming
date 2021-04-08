@@ -4,15 +4,13 @@
 
 def find_peak(list_of_integers):
     """Finds the peak number of the list"""
-    listint = list_of_integers
-    size = len(listint)
-
-    if listint == []:
-        return None
-    if listint == 1:
-        return listint[0]
-
-    for i in range(1, size - 1):
-        if listint[i] > listint[i + 1]:
-            return listint[i]
-    return listint[i + 1]
+    li = list_of_integers
+    l = len(li)
+    if l == 0:
+        return
+    m = l // 2
+    if (m == l - 1 or li[m] >= li[m + 1]) and (m == 0 or li[m] >= li[m - 1]):
+        return li[m]
+    if m != l - 1 and li[m + 1] > li[m]:
+        return find_peak(li[m + 1:])
+    return find_peak(li[:m])
