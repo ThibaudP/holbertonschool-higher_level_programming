@@ -10,10 +10,13 @@ if __name__ == "__main__":
     headers = {'Accept': 'application/vnd.github.v3+json'}
     url = "http://api.github.com/users/{}".format(user)
 
-    response = requests.get(url, auth=(user, pwd), headers=headers)
-    json = response.json()
+    try:
+        response = requests.get(url, auth=(user, pwd), headers=headers)
+        json = response.json()
 
-    if 'id' in json:
-        print(json.get('id'))
-    else:
+        if 'id' in json:
+            print(json.get('id'))
+        else:
+            print('None')
+    except:
         print('None')
