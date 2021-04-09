@@ -23,5 +23,6 @@ Each subfolder of this repo contains one singular project comprised of multiple 
 * **[0x0E-SQL_more_queries](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x0E-SQL_more_queries)**: SQL - More Queries!
 * **[0x0F-python-object_relational_mapping](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x0F-python-object_relational_mapping)**: Python - Object Relational Mapping
 * **[0x10-python-network_0](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x10-python-network_0)**: Python - Network #0
+* **[0x11-python-network_1](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x11-python-network_1)**: Python - Network #1
 * **[0x12-javascript-warm_up](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x12-javascript-warm_up)**: JavaScript - Warm up
 * **[0x13-javascript_object_scopes_closures](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x13-javascript_object_scopes_closures)**: JavaScript - Objects, scopes & closures
