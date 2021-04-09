@@ -9,7 +9,9 @@ if __name__ == "__main__":
     except:
         param = ""
 
-    response = requests.post("http://0.0.0.0:5000/search_user", data={'q': param})
+    url = "http://0.0.0.0:5000/search_user"
+
+    response = requests.post(url, data={'q': param})
     try:
         json = response.json()
         if 'id' in json:
