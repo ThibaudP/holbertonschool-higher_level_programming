@@ -8,7 +8,7 @@ if __name__ == "__main__":
     pwd = argv[2]
 
     headers = {'Accept': 'application/vnd.github.v3+json'}
-    url = "http://api.github.com/users/{}".format(user)
+    url = "http://api.github.com/user"
 
     try:
         response = requests.get(url, auth=(user, pwd), headers=headers)
