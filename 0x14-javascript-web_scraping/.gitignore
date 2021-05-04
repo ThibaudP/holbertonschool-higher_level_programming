@@ -1,6 +1,4 @@
-*main*
-a.out
-__pycache__
-[!0-9]*.py
-*.pyc
-file*
+cisfun
+my_file.txt
+toto
+loripsum
