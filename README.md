@@ -26,3 +26,4 @@ Each subfolder of this repo contains one singular project comprised of multiple 
 * **[0x11-python-network_1](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x11-python-network_1)**: Python - Network #1
 * **[0x12-javascript-warm_up](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x12-javascript-warm_up)**: JavaScript - Warm up
 * **[0x13-javascript_object_scopes_closures](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x13-javascript_object_scopes_closures)**: JavaScript - Objects, scopes & closures
+* **[0x14-javascript-web_scraping](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x14-javascript-web_scraping)**: JavaScript - Web Scraping
