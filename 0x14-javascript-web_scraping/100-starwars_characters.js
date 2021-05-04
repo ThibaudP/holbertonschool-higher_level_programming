@@ -11,7 +11,7 @@ request(url, { json: true }, (err, response, body) => {
   }
   const cast = body.characters;
 
-  cast.forEach(characterUrl => {
+  for (const characterUrl of cast) {
     request(characterUrl, { json: true }, (err, response, body) => {
       if (err) {
         console.error(err);
@@ -19,5 +19,5 @@ request(url, { json: true }, (err, response, body) => {
         console.log(body.name);
       }
     });
-  });
+  }
 });
