@@ -1,9 +1,3 @@
-*main*
 a.out
-*test*
 __pycache__
-linked_lists.c
-[!0-9]*.py
 *.pyc
-100-test_lists.py
-libPyList.so

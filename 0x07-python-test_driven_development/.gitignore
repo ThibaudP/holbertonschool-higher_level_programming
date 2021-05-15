@@ -1,8 +1,3 @@
-*main*
 a.out
 __pycache__
-[!0-9]*.py
 *.pyc
-6-max_integer.py
-102-tests.py
-libPython.so
