@@ -28,3 +28,4 @@ Each subfolder of this repo contains one singular project comprised of multiple 
 * **[0x13-javascript_object_scopes_closures](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x13-javascript_object_scopes_closures)**: JavaScript - Objects, scopes & closures
 * **[0x14-javascript-web_scraping](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x14-javascript-web_scraping)**: JavaScript - Web Scraping
 * **[0x15-javascript-web_jquery](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x15-javascript-web_jquery)**: JavaScript - JQuery
+* **[0x16-api_advanced](https://github.com/ThibaudP/holbertonschool-higher_level_programming/tree/main/0x16-api_advanced)**: Python - Playing with the Reddit API
